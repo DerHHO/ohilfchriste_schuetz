@@ -21,6 +21,7 @@ chorpartiturOHilfChristeSchuetz = {
           }
         }
         \addlyrics { \tenorITextIOHilfChristeSchuetz }
+        \addlyrics { \tenorITextIIOHilfChristeSchuetz }
 
       >>
 
@@ -43,6 +44,7 @@ chorpartiturOHilfChristeSchuetz = {
           }
         }
         \addlyrics { \tenorIITextIOHilfChristeSchuetz }
+        \addlyrics { \tenorIITextIIOHilfChristeSchuetz }
 
       >>
     >>
@@ -106,7 +108,7 @@ orgelsystemOHilfChristeSchuetz = {
 scoreOHilfChristeSchuetz = {
   <<
     \chorpartiturOHilfChristeSchuetz
-    \orgelsystemOHilfChristeSchuetz
+    %\orgelsystemOHilfChristeSchuetz
 
 
     \new Staff \with {
@@ -126,11 +128,11 @@ scoreOHilfChristeSchuetz = {
           \continuoNotenOHilfChristeSchuetz
         }
       }
-
+      \new FiguredBass \bezifferungOHilfChristeSchuetz
     >>
 
 
-    \new Staff \with {
+    %{\new Staff \with {
       instrumentName = "Violoncello/Kontrabass/Fagott"
       shortInstrumentName = "B.c."
       midiInstrument = "acoustic grand"
@@ -148,6 +150,6 @@ scoreOHilfChristeSchuetz = {
         }
       }
 
-    >>
+    >>%}
   >>
 }
